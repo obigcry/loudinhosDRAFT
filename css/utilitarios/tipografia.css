@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+.space-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.h-regular {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+}
+.h-regular2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-style: normal;
+}
+
+.p-medium {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.p-medium2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.h-semibold {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.h-semibold2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.6rem;
+}

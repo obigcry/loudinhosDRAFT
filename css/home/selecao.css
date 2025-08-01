@@ -1,0 +1,121 @@
+.selecao-bg {
+  width: 100vw;
+  height: auto;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+.selecao-container {
+  display: flex;
+  max-width: 1080px;
+  margin: 0 auto;
+  gap: 4px;
+}
+
+.card {
+  width: 220px;
+  height: 320px;
+  background-color: var(--col-bk2);
+  cursor: pointer;
+  background-size: cover;
+  background-position: top right;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.card.champion-selected {
+  position: relative;
+  background-position: top right;
+}
+.card .role-info {
+  width: 100%;
+  z-index: 2;
+  bottom: 0;
+  position: absolute;
+}
+.role-info p {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal */
+.modal {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+.modal-content {
+  background-color: var(--col-bk2);
+  padding: 20px;
+  border: 1px solid var(--col-bk3);
+  max-width: 400px;
+  height: auto;
+}
+.modal-content::-webkit-scrollbar {
+  width: 10px;
+}
+.modal-content::-webkit-scrollbar-track {
+  background: var(--col-bk);
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: var(--col-green);
+}
+
+#searchInput {
+  padding: 10px;
+  width: 100%;
+  margin: 4px 0;
+}
+
+#championList {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+#championList li {
+  border: 1px solid var(--col-bk3);
+  padding: 5px;
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+#championList li:hover {
+  background-color: var(--col-bk);
+}
+
+@media (max-width: 700px) {
+  .modal-content {
+    background-color: var(--col-bk2);
+    padding: 20px;
+    border: 1px solid var(--col-bk3);
+    max-width: 330px;
+    overflow-y: scroll;
+    max-height: 350px;
+  }
+  .selecao-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    overflow-x: scroll;
+  }
+  .selecao-container::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    width: 240px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+}

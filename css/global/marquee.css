@@ -1,0 +1,29 @@
+.marquee {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  background: var(--col-green);
+  padding: 10px 0;
+}
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+.marquee-content {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
+.loudinhos {
+  margin-right: 50px;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

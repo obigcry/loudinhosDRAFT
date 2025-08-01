@@ -1,0 +1,45 @@
+.tutorial-bg {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  padding: 20px 10px;
+}
+.tutorial-container {
+  max-width: 1080px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.tutorial {
+  text-align: left;
+  overflow: hidden;
+}
+
+.tutorial .title {
+  background-color: var(--col-bk2);
+  padding: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  .tutorial-bg {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    padding: 20px 10px;
+  }
+  .tutorial-container {
+    display: grid;
+    justify-content: center;
+  }
+  .tutorial .passo {
+    border-bottom: 1px solid var(--col-bk3);
+    padding: 5px 0;
+  }
+  .tutorial li:nth-child(5) {
+    border: none;
+  }
+}

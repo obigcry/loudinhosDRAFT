@@ -1,0 +1,18 @@
+.button-bg {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  padding: 20px 10px;
+}
+.button-container {
+  max-width: 1080px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(to right, var(--col-green), var(--col-greendark));
+}
+.button-container .btn {
+  padding: 20px;
+  cursor: pointer;
+}

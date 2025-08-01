@@ -1,0 +1,35 @@
+footer {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: var(--padding-pc);
+  border-top: 1px solid var(--col-bk3);
+}
+.footer-container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.footer-conteudo {
+  display: flex;
+  justify-content: space-between;
+}
+.redes-sociais {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.redes-sociais img {
+  filter: invert();
+}
+.footer-text {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .footer-conteudo {
+    display: grid;
+    justify-content: center;
+  }
+}

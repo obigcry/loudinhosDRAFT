@@ -1,0 +1,13 @@
+:root {
+  --padding-pc: 20px 10px;
+  --padding-default: 20px;
+  --padding-lg: 40px 10px;
+}
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+body {
+  text-align: center;
+  background-color: var(--col-bk);
+}

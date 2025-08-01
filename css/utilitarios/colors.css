@@ -1,0 +1,28 @@
+/* GERAL */
+:root {
+  --col-bk: #000405;
+  --col-bk2: #0e0e0e;
+  --col-bk3: #1e1e1e;
+  --col-wh: #fdfdfd;
+  --col-green: #00ff3b;
+  --col-greendark: #00b928;
+}
+
+.col-bk {
+  color: var(--col-bk);
+}
+.col-bk2 {
+  color: var(--col-bk2);
+}
+.col-bk3 {
+  color: var(--col-bk3);
+}
+.col-wh {
+  color: var(--col-wh);
+}
+.col-green {
+  color: var(--col-green);
+}
+.col-greendark {
+  color: var(--col-greendark);
+}
