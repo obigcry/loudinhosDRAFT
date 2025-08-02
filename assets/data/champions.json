@@ -115,9 +115,9 @@
       "tags": ["Fighter"]
     },
     {
-      "name": "Keynnen",
-      "id": "Keynnen",
-      "image": "./assets/img/draft-campeos/Keynnen_0.jpg",
+      "name": "Kennen",
+      "id": "Kennen",
+      "image": "./assets/img/draft-campeos/Kennen_0.jpg",
       "tags": ["Fighter"]
     },
     {
@@ -400,9 +400,9 @@
       "tags": ["Fighter", "Mage"]
     },
     {
-      "name": "Maaster Yi",
-      "id": "MaasterYi",
-      "image": "./assets/img/draft-campeos/MaasterYi_0.jpg",
+      "name": "Master Yi",
+      "id": "MasterYi",
+      "image": "./assets/img/draft-campeos/MasterYi_0.jpg",
       "tags": ["Assassin", "Fighter"]
     },
     {
@@ -1038,7 +1038,7 @@
     {
       "name": "Renata Glasc",
       "id": "RenataGlasc",
-      "image": "./assets/img/draft-campeos/RenataGlasc_0.jpg",
+      "image": "./assets/img/draft-campeos/Renata_0.jpg",
       "tags": ["Support", "Mage"]
     },
     {

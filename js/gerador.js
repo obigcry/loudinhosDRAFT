@@ -10,7 +10,18 @@ async function loadChampions() {
 loadChampions();
 
 function getAllChampions() {
-  return Object.values(allChamps).flat();
+  const champs = Object.values(allChamps).flat();
+  const unique = [];
+  const seen = new Set();
+
+  for (const champ of champs) {
+    if (!seen.has(champ.name)) {
+      seen.add(champ.name);
+      unique.push(champ);
+    }
+  }
+
+  return unique;
 }
 
 function filterByRole(role) {
