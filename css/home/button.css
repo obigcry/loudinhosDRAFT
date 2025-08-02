@@ -16,3 +16,12 @@
   padding: 20px;
   cursor: pointer;
 }
+
+@media (max-width: 700px) {
+  .button-container {
+    border-radius: 4px;
+  }
+  .button-container .btn {
+    padding: 15px;
+  }
+}

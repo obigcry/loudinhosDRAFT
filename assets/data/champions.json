@@ -7,6 +7,12 @@
       "tags": ["Fighter", "Tank"]
     },
     {
+      "name": "Akali",
+      "id": "Akali",
+      "image": "./assets/img/draft-campeos/Akali_0.jpg",
+      "tags": ["Fighter", "Tank"]
+    },
+    {
       "name": "Camille",
       "id": "Camille",
       "image": "./assets/img/draft-campeos/Camille_0.jpg",
@@ -37,6 +43,12 @@
       "tags": ["Fighter", "Tank"]
     },
     {
+      "name": "Gangplank",
+      "id": "Gangplank",
+      "image": "./assets/img/draft-campeos/Gangplank_0.jpg",
+      "tags": ["Fighter", "Tank"]
+    },
+    {
       "name": "Garen",
       "id": "Garen",
       "image": "./assets/img/draft-campeos/Garen_0.jpg",
@@ -58,6 +70,12 @@
       "name": "Gwen",
       "id": "Gwen",
       "image": "./assets/img/draft-campeos/Gwen_0.jpg",
+      "tags": ["Fighter"]
+    },
+    {
+      "name": "Heimerdinger",
+      "id": "Heimerdinger",
+      "image": "./assets/img/draft-campeos/Heimerdinger_0.jpg",
       "tags": ["Fighter"]
     },
     {
@@ -97,15 +115,21 @@
       "tags": ["Fighter"]
     },
     {
-      "name": "Malphite",
-      "id": "Malphite",
-      "image": "./assets/img/draft-campeos/Malphite_0.jpg",
+      "name": "Keynnen",
+      "id": "Keynnen",
+      "image": "./assets/img/draft-campeos/Keynnen_0.jpg",
       "tags": ["Fighter"]
     },
     {
-      "name": "Maokai",
-      "id": "Maokai",
-      "image": "./assets/img/draft-campeos/Maokai_0.jpg",
+      "name": "Kled",
+      "id": "Kled",
+      "image": "./assets/img/draft-campeos/Kled_0.jpg",
+      "tags": ["Fighter"]
+    },
+    {
+      "name": "Malphite",
+      "id": "Malphite",
+      "image": "./assets/img/draft-campeos/Malphite_0.jpg",
       "tags": ["Fighter"]
     },
     {
@@ -118,6 +142,12 @@
       "name": "Nasus",
       "id": "Nasus",
       "image": "./assets/img/draft-campeos/Nasus_0.jpg",
+      "tags": ["Fighter"]
+    },
+    {
+      "name": "Nidalee",
+      "id": "Nidalee",
+      "image": "./assets/img/draft-campeos/Nidalee_0.jpg",
       "tags": ["Fighter"]
     },
     {
@@ -169,12 +199,6 @@
       "tags": ["Fighter", "Mage"]
     },
     {
-      "name": "Sejuani",
-      "id": "Sejuani",
-      "image": "./assets/img/draft-campeos/Sejuani_0.jpg",
-      "tags": ["Tank", "Fighter"]
-    },
-    {
       "name": "Sett",
       "id": "Sett",
       "image": "./assets/img/draft-campeos/Sett_0.jpg",
@@ -205,6 +229,12 @@
       "tags": ["Tank", "Support"]
     },
     {
+      "name": "Teemo",
+      "id": "Teemo",
+      "image": "./assets/img/draft-campeos/Teemo_0.jpg",
+      "tags": ["Tank", "Support"]
+    },
+    {
       "name": "Trundle",
       "id": "Trundle",
       "image": "./assets/img/draft-campeos/Trundle_0.jpg",
@@ -223,27 +253,15 @@
       "tags": ["Fighter", "Tank"]
     },
     {
+      "name": "Vayne",
+      "id": "Vayne",
+      "image": "./assets/img/draft-campeos/Vayne_0.jpg",
+      "tags": ["Fighter", "Tank"]
+    },
+    {
       "name": "Volibear",
       "id": "Volibear",
       "image": "./assets/img/draft-campeos/Volibear_0.jpg",
-      "tags": ["Fighter", "Tank"]
-    },
-    {
-      "name": "Warwick",
-      "id": "Warwick",
-      "image": "./assets/img/draft-campeos/Warwick_0.jpg",
-      "tags": ["Fighter", "Tank"]
-    },
-    {
-      "name": "Wukong",
-      "id": "Wukong",
-      "image": "./assets/img/draft-campeos/Wukong_0.jpg",
-      "tags": ["Fighter", "Tank"]
-    },
-    {
-      "name": "Yorick",
-      "id": "Yorick",
-      "image": "./assets/img/draft-campeos/Yorick_0.jpg",
       "tags": ["Fighter", "Tank"]
     },
     {
@@ -253,16 +271,10 @@
       "tags": ["Fighter", "Assassin"]
     },
     {
-      "name": "Yasuo",
-      "id": "Yasuo",
-      "image": "./assets/img/draft-campeos/Yasuo_0.jpg",
-      "tags": ["Fighter", "Assassin"]
-    },
-    {
-      "name": "Zac",
-      "id": "Zac",
-      "image": "./assets/img/draft-campeos/Zac_0.jpg",
-      "tags": ["Tank", "Fighter"]
+      "name": "Yorick",
+      "id": "Yorick",
+      "image": "./assets/img/draft-campeos/Yorick_0.jpg",
+      "tags": ["Fighter", "Tank"]
     }
   ],
 
@@ -271,6 +283,24 @@
       "name": "Amumu",
       "id": "Amumu",
       "image": "./assets/img/draft-campeos/Amumu_0.jpg",
+      "tags": ["Tank", "Mage"]
+    },
+    {
+      "name": "Bel'Veth",
+      "id": "BelVeth",
+      "image": "./assets/img/draft-campeos/BelVeth_0.jpg",
+      "tags": ["Tank", "Mage"]
+    },
+    {
+      "name": "Brand",
+      "id": "BelVeth",
+      "image": "./assets/img/draft-campeos/BelVeth_0.jpg",
+      "tags": ["Tank", "Mage"]
+    },
+    {
+      "name": "Briar",
+      "id": "Briar",
+      "image": "./assets/img/draft-campeos/Briar_0.jpg",
       "tags": ["Tank", "Mage"]
     },
     {
@@ -304,6 +334,12 @@
       "tags": ["Mage", "Support"]
     },
     {
+      "name": "Gragas",
+      "id": "Gragas",
+      "image": "./assets/img/draft-campeos/Gragas_0.jpg",
+      "tags": ["Marksman", "Assassin"]
+    },
+    {
       "name": "Graves",
       "id": "Graves",
       "image": "./assets/img/draft-campeos/Graves_0.jpg",
@@ -322,16 +358,10 @@
       "tags": ["Support", "Mage"]
     },
     {
-      "name": "Jarvan",
+      "name": "Jarvan IV",
       "id": "Jarvan",
       "image": "./assets/img/draft-campeos/Jarvan_0.jpg",
       "tags": ["Tank", "Fighter"]
-    },
-    {
-      "name": "Jax",
-      "id": "Jax",
-      "image": "./assets/img/draft-campeos/Jax_0.jpg",
-      "tags": ["Fighter", "Tank"]
     },
     {
       "name": "Karthus",
@@ -346,7 +376,7 @@
       "tags": ["Mage"]
     },
     {
-      "name": "Khazix",
+      "name": "Kha'Zix",
       "id": "Khazix",
       "image": "./assets/img/draft-campeos/Khazix_0.jpg",
       "tags": ["Assassin"]
@@ -370,21 +400,9 @@
       "tags": ["Fighter", "Mage"]
     },
     {
-      "name": "Maokai",
-      "id": "Maokai",
-      "image": "./assets/img/draft-campeos/Maokai_0.jpg",
-      "tags": ["Assassin", "Fighter"]
-    },
-    {
       "name": "Maaster Yi",
       "id": "MaasterYi",
       "image": "./assets/img/draft-campeos/MaasterYi_0.jpg",
-      "tags": ["Assassin", "Fighter"]
-    },
-    {
-      "name": "Morgana",
-      "id": "Morgana",
-      "image": "./assets/img/draft-campeos/Morgana_0.jpg",
       "tags": ["Assassin", "Fighter"]
     },
     {
@@ -406,15 +424,9 @@
       "tags": ["Tank", "Mage"]
     },
     {
-      "name": "Olaf",
-      "id": "Olaf",
-      "image": "./assets/img/draft-campeos/Olaf_0.jpg",
-      "tags": ["Assassin", "Fighter"]
-    },
-    {
-      "name": "Poppy",
-      "id": "Poppy",
-      "image": "./assets/img/draft-campeos/Poppy_0.jpg",
+      "name": "Pantheon",
+      "id": "Pantheon",
+      "image": "./assets/img/draft-campeos/Pantheon_0.jpg",
       "tags": ["Assassin", "Fighter"]
     },
     {
@@ -424,7 +436,7 @@
       "tags": ["Assassin", "Fighter"]
     },
     {
-      "name": "RekSai",
+      "name": "Rek'Sai",
       "id": "RekSai",
       "image": "./assets/img/draft-campeos/RekSai_0.jpg",
       "tags": ["Assassin", "Fighter"]
@@ -460,16 +472,16 @@
       "tags": ["Assassin"]
     },
     {
-      "name": "Sylas",
-      "id": "Sylas",
-      "image": "./assets/img/draft-campeos/Sylas_0.jpg",
-      "tags": ["Mage", "Fighter"]
-    },
-    {
       "name": "Taliyah",
       "id": "Taliyah",
       "image": "./assets/img/draft-campeos/Taliyah_0.jpg",
       "tags": ["Mage", "Support"]
+    },
+    {
+      "name": "Talon",
+      "id": "Talon",
+      "image": "./assets/img/draft-campeos/Talon_0.jpg",
+      "tags": ["Assassin"]
     },
     {
       "name": "Trundle",
@@ -672,9 +684,9 @@
       "tags": ["Mage"]
     },
     {
-      "name": "Malphite",
-      "id": "Malphite",
-      "image": "./assets/img/draft-campeos/Malphite_0.jpg",
+      "name": "Mel",
+      "id": "Mel",
+      "image": "./assets/img/draft-campeos/Mel_0.jpg",
       "tags": ["Tank", "Fighter"]
     },
     {
@@ -682,12 +694,6 @@
       "id": "Naafiri",
       "image": "./assets/img/draft-campeos/Naafiri_0.jpg",
       "tags": ["Assassin"]
-    },
-    {
-      "name": "Neeko",
-      "id": "Neeko",
-      "image": "./assets/img/draft-campeos/Neeko_0.jpg",
-      "tags": ["Mage"]
     },
     {
       "name": "Orianna",
@@ -702,15 +708,21 @@
       "tags": ["Assassin"]
     },
     {
-      "name": "Qiyana",
-      "id": "Qiyana",
-      "image": "./assets/img/draft-campeos/Qiyana_0.jpg",
-      "tags": ["Assassin"]
-    },
-    {
       "name": "Ryze",
       "id": "Ryze",
       "image": "./assets/img/draft-campeos/Ryze_0.jpg",
+      "tags": ["Mage"]
+    },
+    {
+      "name": "Swain",
+      "id": "Swain",
+      "image": "./assets/img/draft-campeos/Swain_0.jpg",
+      "tags": ["Mage"]
+    },
+    {
+      "name": "Sylas",
+      "id": "Sylas",
+      "image": "./assets/img/draft-campeos/Sylas_0.jpg",
       "tags": ["Mage"]
     },
     {
@@ -718,12 +730,6 @@
       "id": "Syndra",
       "image": "./assets/img/draft-campeos/Syndra_0.jpg",
       "tags": ["Mage"]
-    },
-    {
-      "name": "Sylas",
-      "id": "Sylas",
-      "image": "./assets/img/draft-campeos/Sylas_0.jpg",
-      "tags": ["Mage", "Fighter"]
     },
     {
       "name": "Taliyah",
@@ -790,26 +796,44 @@
       "id": "Zed",
       "image": "./assets/img/draft-campeos/Zed_0.jpg",
       "tags": ["Assassin"]
-    },
-    {
-      "name": "Ziggs",
-      "id": "Ziggs",
-      "image": "./assets/img/draft-campeos/Ziggs_0.jpg",
-      "tags": ["Mage"]
-    },
-    {
-      "name": "Zoe",
-      "id": "Zoe",
-      "image": "./assets/img/draft-campeos/Zoe_0.jpg",
-      "tags": ["Mage"]
     }
   ],
   "adc": [
+    {
+      "name": "Aphelios",
+      "id": "Aphelios",
+      "image": "./assets/img/draft-campeos/Aphelios_0.jpg",
+      "tags": ["Marksman", "Support"]
+    },
     {
       "name": "Ashe",
       "id": "Ashe",
       "image": "./assets/img/draft-campeos/Ashe_0.jpg",
       "tags": ["Marksman", "Support"]
+    },
+    {
+      "name": "Caitlyn",
+      "id": "Caitlyn",
+      "image": "./assets/img/draft-campeos/Caitlyn_0.jpg",
+      "tags": ["Marksman", "Support"]
+    },
+    {
+      "name": "Draven",
+      "id": "Draven",
+      "image": "./assets/img/draft-campeos/Draven_0.jpg",
+      "tags": ["Marksman", "Support"]
+    },
+    {
+      "name": "Ezreal",
+      "id": "Ezreal",
+      "image": "./assets/img/draft-campeos/Ezreal_0.jpg",
+      "tags": ["Marksman", "Support"]
+    },
+    {
+      "name": "Jhin",
+      "id": "Jhin",
+      "image": "./assets/img/draft-campeos/Jhin_0.jpg",
+      "tags": ["Marksman"]
     },
     {
       "name": "Jinx",
@@ -824,69 +848,15 @@
       "tags": ["Marksman"]
     },
     {
-      "name": "Ezreal",
-      "id": "Ezreal",
-      "image": "./assets/img/draft-campeos/Ezreal_0.jpg",
+      "name": "Kalista",
+      "id": "Kalista",
+      "image": "./assets/img/draft-campeos/Kalista_0.jpg",
       "tags": ["Marksman"]
     },
     {
-      "name": "Jhin",
-      "id": "Jhin",
-      "image": "./assets/img/draft-campeos/Jhin_0.jpg",
-      "tags": ["Marksman"]
-    },
-    {
-      "name": "Xayah",
-      "id": "Xayah",
-      "image": "./assets/img/draft-campeos/Xayah_0.jpg",
-      "tags": ["Marksman"]
-    },
-    {
-      "name": "Aphelios",
-      "id": "Aphelios",
-      "image": "./assets/img/draft-campeos/Aphelios_0.jpg",
-      "tags": ["Marksman"]
-    },
-    {
-      "name": "Sivir",
-      "id": "Sivir",
-      "image": "./assets/img/draft-campeos/Sivir_0.jpg",
-      "tags": ["Marksman"]
-    },
-    {
-      "name": "Samira",
-      "id": "Samira",
-      "image": "./assets/img/draft-campeos/Samira_0.jpg",
-      "tags": ["Marksman", "Assassin"]
-    },
-    {
-      "name": "Miss Fortune",
-      "id": "MissFortune",
-      "image": "./assets/img/draft-campeos/MissFortune_0.jpg",
-      "tags": ["Marksman"]
-    },
-    {
-      "name": "Ashe",
-      "id": "Ashe",
-      "image": "./assets/img/draft-campeos/Ashe_0.jpg",
-      "tags": ["Marksman"]
-    },
-    {
-      "name": "Draven",
-      "id": "Draven",
-      "image": "./assets/img/draft-campeos/Draven_0.jpg",
-      "tags": ["Marksman"]
-    },
-    {
-      "name": "Varus",
-      "id": "Varus",
-      "image": "./assets/img/draft-campeos/Varus_0.jpg",
-      "tags": ["Marksman"]
-    },
-    {
-      "name": "Zeri",
-      "id": "Zeri",
-      "image": "./assets/img/draft-campeos/Zeri_0.jpg",
+      "name": "Kog'Maw",
+      "id": "KogMaw",
+      "image": "./assets/img/draft-campeos/KogMaw_0.jpg",
       "tags": ["Marksman"]
     },
     {
@@ -896,21 +866,45 @@
       "tags": ["Marksman"]
     },
     {
+      "name": "Miss Fortune",
+      "id": "MissFortune",
+      "image": "./assets/img/draft-campeos/MissFortune_0.jpg",
+      "tags": ["Marksman"]
+    },
+    {
+      "name": "Samira",
+      "id": "Samira",
+      "image": "./assets/img/draft-campeos/Samira_0.jpg",
+      "tags": ["Marksman"]
+    },
+    {
+      "name": "Senna",
+      "id": "Senna",
+      "image": "./assets/img/draft-campeos/Senna_0.jpg",
+      "tags": ["Marksman"]
+    },
+    {
+      "name": "Sivir",
+      "id": "Sivir",
+      "image": "./assets/img/draft-campeos/Sivir_0.jpg",
+      "tags": ["Marksman"]
+    },
+    {
+      "name": "Smolder",
+      "id": "Smolder",
+      "image": "./assets/img/draft-campeos/Smolder_0.jpg",
+      "tags": ["Marksman"]
+    },
+    {
       "name": "Twitch",
       "id": "Twitch",
       "image": "./assets/img/draft-campeos/Twitch_0.jpg",
       "tags": ["Marksman"]
     },
     {
-      "name": "Tristana",
-      "id": "Tristana",
-      "image": "./assets/img/draft-campeos/Tristana_0.jpg",
-      "tags": ["Marksman"]
-    },
-    {
-      "name": "Kog’Maw",
-      "id": "KogMaw",
-      "image": "./assets/img/draft-campeos/KogMaw_0.jpg",
+      "name": "Varus",
+      "id": "Varus",
+      "image": "./assets/img/draft-campeos/Varus_0.jpg",
       "tags": ["Marksman"]
     },
     {
@@ -920,28 +914,34 @@
       "tags": ["Marksman"]
     },
     {
-      "name": "Nilah",
-      "id": "Nilah",
-      "image": "./assets/img/draft-campeos/Nilah_0.jpg",
+      "name": "Xayah",
+      "id": "Xayah",
+      "image": "./assets/img/draft-campeos/Xayah_0.jpg",
       "tags": ["Marksman"]
     },
     {
-      "name": "Kalista",
-      "id": "Kalista",
-      "image": "./assets/img/draft-campeos/Kalista_0.jpg",
+      "name": "Zeri",
+      "id": "Zeri",
+      "image": "./assets/img/draft-campeos/Zeri_0.jpg",
       "tags": ["Marksman"]
     },
     {
-      "name": "Seraphine",
-      "id": "Seraphine",
-      "image": "./assets/img/draft-campeos/Seraphine_0.jpg",
-      "tags": ["Mage"]
+      "name": "Veigar",
+      "id": "Veigar",
+      "image": "./assets/img/draft-campeos/Veigar_0.jpg",
+      "tags": ["Marksman"]
     },
     {
-      "name": "Ziggs",
-      "id": "Ziggs",
-      "image": "./assets/img/draft-campeos/Ziggs_0.jpg",
-      "tags": ["Mage"]
+      "name": "Hwei",
+      "id": "Hwei",
+      "image": "./assets/img/draft-campeos/Hwei_0.jpg",
+      "tags": ["Marksman"]
+    },
+    {
+      "name": "Mel",
+      "id": "Mel",
+      "image": "./assets/img/draft-campeos/Mel_0.jpg",
+      "tags": ["Marksman"]
     }
   ],
   "support": [
@@ -952,13 +952,13 @@
       "tags": ["Tank", "Support"]
     },
     {
-      "name": "Ashe",
-      "id": "Ashe",
-      "image": "./assets/img/draft-campeos/Ashe_0.jpg",
-      "tags": ["Marksman", "Support"]
+      "name": "Amumu",
+      "id": "Amumu",
+      "image": "./assets/img/draft-campeos/Amumu_0.jpg",
+      "tags": ["Tank", "Support"]
     },
     {
-      "name": "Bard",
+      "name": "Bardo",
       "id": "Bard",
       "image": "./assets/img/draft-campeos/Bard_0.jpg",
       "tags": ["Support", "Mage"]
@@ -970,34 +970,16 @@
       "tags": ["Tank", "Support"]
     },
     {
-      "name": "Brand",
-      "id": "Brand",
-      "image": "./assets/img/draft-campeos/Brand_0.jpg",
-      "tags": ["Mage", "Support"]
-    },
-    {
       "name": "Braum",
       "id": "Braum",
       "image": "./assets/img/draft-campeos/Braum_0.jpg",
       "tags": ["Tank", "Support"]
     },
     {
-      "name": "Hwei",
-      "id": "Hwei",
-      "image": "./assets/img/draft-campeos/Hwei_0.jpg",
-      "tags": ["Mage", "Support"]
-    },
-    {
       "name": "Janna",
       "id": "Janna",
       "image": "./assets/img/draft-campeos/Janna_0.jpg",
       "tags": ["Enchanter", "Support"]
-    },
-    {
-      "name": "Karma",
-      "id": "Karma",
-      "image": "./assets/img/draft-campeos/Karma_0.jpg",
-      "tags": ["Mage", "Support"]
     },
     {
       "name": "Leona",
@@ -1015,13 +997,7 @@
       "name": "Lux",
       "id": "Lux",
       "image": "./assets/img/draft-campeos/Lux_0.jpg",
-      "tags": ["Mage", "Support"]
-    },
-    {
-      "name": "Maokai",
-      "id": "Maokai",
-      "image": "./assets/img/draft-campeos/Maokai_0.jpg",
-      "tags": ["Tank", "Support"]
+      "tags": ["Enchanter", "Support"]
     },
     {
       "name": "Milio",
@@ -1040,30 +1016,6 @@
       "id": "Nami",
       "image": "./assets/img/draft-campeos/Nami_0.jpg",
       "tags": ["Enchanter", "Support"]
-    },
-    {
-      "name": "Nautilus",
-      "id": "Nautilus",
-      "image": "./assets/img/draft-campeos/Nautilus_0.jpg",
-      "tags": ["Tank", "Support"]
-    },
-    {
-      "name": "Neeko",
-      "id": "Neeko",
-      "image": "./assets/img/draft-campeos/Neeko_0.jpg",
-      "tags": ["Mage", "Support"]
-    },
-    {
-      "name": "Pantheon",
-      "id": "Pantheon",
-      "image": "./assets/img/draft-campeos/Pantheon_0.jpg",
-      "tags": ["Fighter", "Support"]
-    },
-    {
-      "name": "Poppy",
-      "id": "Poppy",
-      "image": "./assets/img/draft-campeos/Poppy_0.jpg",
-      "tags": ["Tank", "Support"]
     },
     {
       "name": "Pyke",
@@ -1090,12 +1042,6 @@
       "tags": ["Support", "Mage"]
     },
     {
-      "name": "Senna",
-      "id": "Senna",
-      "image": "./assets/img/draft-campeos/Senna_0.jpg",
-      "tags": ["Marksman", "Support"]
-    },
-    {
       "name": "Seraphine",
       "id": "Seraphine",
       "image": "./assets/img/draft-campeos/Seraphine_0.jpg",
@@ -1114,9 +1060,15 @@
       "tags": ["Enchanter", "Support"]
     },
     {
-      "name": "Swain",
-      "id": "Swain",
-      "image": "./assets/img/draft-campeos/Swain_0.jpg",
+      "name": "Senna",
+      "id": "Senna",
+      "image": "./assets/img/draft-campeos/Senna_0.jpg",
+      "tags": ["Mage", "Support"]
+    },
+    {
+      "name": "Sett",
+      "id": "Sett",
+      "image": "./assets/img/draft-campeos/Sett_0.jpg",
       "tags": ["Mage", "Support"]
     },
     {
@@ -1126,22 +1078,16 @@
       "tags": ["Tank", "Support"]
     },
     {
+      "name": "Tahm Kench",
+      "id": "TahmKench",
+      "image": "./assets/img/draft-campeos/TahmKench_0.jpg",
+      "tags": ["Tank", "Support"]
+    },
+    {
       "name": "Thresh",
       "id": "Thresh",
       "image": "./assets/img/draft-campeos/Thresh_0.jpg",
       "tags": ["Tank", "Support"]
-    },
-    {
-      "name": "Vel’Koz",
-      "id": "VelKoz",
-      "image": "./assets/img/draft-campeos/VelKoz_0.jpg",
-      "tags": ["Mage", "Support"]
-    },
-    {
-      "name": "Xerath",
-      "id": "Xerath",
-      "image": "./assets/img/draft-campeos/Xerath_0.jpg",
-      "tags": ["Mage", "Support"]
     },
     {
       "name": "Yuumi",

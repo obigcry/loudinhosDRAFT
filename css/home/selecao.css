@@ -61,7 +61,23 @@
   padding: 20px;
   border: 1px solid var(--col-bk3);
   max-width: 400px;
-  height: auto;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.all-roles {
+  filter: invert();
+}
+.modal-content .roles-lol {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  gap: 20px;
+  justify-content: center;
+}
+.roles-lol img:hover {
+  transform: scale(1.15);
 }
 .modal-content::-webkit-scrollbar {
   width: 10px;
@@ -115,6 +131,7 @@
   }
   .card {
     width: 240px;
+    border: 1px solid var(--col-bk3);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
   }

@@ -42,4 +42,8 @@
   .tutorial li:nth-child(5) {
     border: none;
   }
+  .tutorial .title {
+    background-color: var(--col-bk3);
+    padding: 5px;
+  }
 }

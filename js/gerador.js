@@ -9,23 +9,25 @@ async function loadChampions() {
 
 loadChampions();
 
+function getAllChampions() {
+  return Object.values(allChamps).flat();
+}
+
 function filterByRole(role) {
-  // Agora os campeões já estão separados por role no JSON
   return allChamps[role.toLowerCase()] || [];
 }
 
 document.querySelectorAll(".card").forEach((card) => {
   card.addEventListener("click", () => {
-    const role = card.dataset.role;
     const modal = document.getElementById("championModal");
     const searchInput = document.getElementById("searchInput");
     const championList = document.getElementById("championList");
 
-    const champs = filterByRole(role);
+    let champs = getAllChampions();
+    let currentChamps = champs;
 
     currentCard = card;
 
-    // mostrar lista de campeões
     renderChampionList(champs, championList, card, modal);
 
     modal.classList.remove("hidden");
@@ -33,11 +35,40 @@ document.querySelectorAll(".card").forEach((card) => {
     searchInput.focus();
 
     searchInput.oninput = () => {
-      const filtered = champs.filter((champ) =>
+      const filtered = currentChamps.filter((champ) =>
         champ.name.toLowerCase().includes(searchInput.value.toLowerCase())
       );
       renderChampionList(filtered, championList, card, modal);
     };
+
+    document.querySelectorAll(".roles-lol img").forEach((icon) => {
+      icon.onclick = () => {
+        const alt = icon.alt.toLowerCase();
+
+        if (icon.classList.contains("all-roles") || alt.includes("todos")) {
+          currentChamps = getAllChampions();
+          renderChampionList(currentChamps, championList, currentCard, modal);
+          return;
+        }
+
+        const role = alt.includes("top")
+          ? "top"
+          : alt.includes("jungle")
+          ? "jungle"
+          : alt.includes("mid")
+          ? "mid"
+          : alt.includes("adc")
+          ? "adc"
+          : alt.includes("support")
+          ? "support"
+          : "";
+
+        if (!role) return;
+
+        currentChamps = filterByRole(role);
+        renderChampionList(currentChamps, championList, currentCard, modal);
+      };
+    });
   });
 });
 
@@ -92,8 +123,6 @@ function renderChampionList(champs, listElement, card, modal) {
     });
 }
 
-// Restante do código (gerar imagem e modal) permanece igual
-
 document
   .querySelector(".button-container")
   .addEventListener("click", async () => {
@@ -109,7 +138,6 @@ document
     canvas.height = 1080;
     const ctx = canvas.getContext("2d");
 
-    // Mapa dos nomes dos jogadores
     const playerNames = {
       card1: "Robo",
       card2: "Gryffinn",
@@ -170,7 +198,6 @@ document
         };
       });
 
-      // Desenhar ícone da role + nome do player
       const roleName = card.dataset.role.toLowerCase();
       const playerName = playerNames[card.id] || "";
 
@@ -185,11 +212,9 @@ document
           const centerX = i * 384 + 384 / 2;
           const bgY = 1080 - bgHeight;
 
-          // Fundo semitransparente
           ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
           ctx.fillRect(i * 384, bgY, 384, bgHeight);
 
-          // Ícone
           ctx.drawImage(
             roleImg,
             centerX - iconSize / 2,
@@ -198,7 +223,6 @@ document
             iconSize
           );
 
-          // Nome do player
           ctx.font = "bold 28px Space Grotesk";
           ctx.fillStyle = "#ffffff";
           ctx.textAlign = "center";
