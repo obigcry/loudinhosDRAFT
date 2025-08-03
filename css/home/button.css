@@ -6,11 +6,16 @@
 }
 .button-container {
   max-width: 1080px;
+  border-radius: 4px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  background: linear-gradient(to right, var(--col-green), var(--col-greendark));
+  background: linear-gradient(
+    to right,
+    var(--col-dourado),
+    var(--col-douradodark)
+  );
 }
 .button-container .btn {
   padding: 20px;
@@ -18,9 +23,6 @@
 }
 
 @media (max-width: 700px) {
-  .button-container {
-    border-radius: 4px;
-  }
   .button-container .btn {
     padding: 15px;
   }

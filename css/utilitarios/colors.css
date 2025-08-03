@@ -1,11 +1,10 @@
-/* GERAL */
 :root {
   --col-bk: #000405;
   --col-bk2: #0e0e0e;
   --col-bk3: #1e1e1e;
   --col-wh: #fdfdfd;
-  --col-green: #00ff3b;
-  --col-greendark: #00b928;
+  --col-dourado: #d39019;
+  --col-douradodark: #f39b03;
 }
 
 .col-bk {
@@ -20,9 +19,9 @@
 .col-wh {
   color: var(--col-wh);
 }
-.col-green {
-  color: var(--col-green);
+.col-dourado {
+  color: var(--col-dourado);
 }
-.col-greendark {
-  color: var(--col-greendark);
+.col-douradodark {
+  color: var(--col-douradodark);
 }

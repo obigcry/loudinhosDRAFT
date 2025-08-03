@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gerador de Draft da Loudinhos">
+  <title>LOUDinhos DRAFT</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header class="header-bg" role="banner" id="header-container">
+  </header>
+
+  <div class="marquee">
+    <div class="marquee-content" id="marquee-content">
+      <a href="https://loudinhos.com.br/" class="loudinhos links h-regular col-bk">Loudinhos.com.br</a>
+    </div>
+  </div>
+
+  <section class="selecao-bg">
+    <div class="selecao-container">
+      <div id="card1" class="card" data-role="Top">
+        <div class="role-info h-regular col-wh">
+          <img src="./assets/img/roles/role-top.png" alt="toplane" width="24" height="24">
+          <p>Top</p>
+        </div>
+      </div>
+      <div id="card2" class="card" data-role="Jungle">
+        <div class="role-info h-regular col-wh">
+          <img src="./assets/img/roles/role-jungle.png" alt="jungle" width="24" height="24">
+          <p>Jungle</p>
+        </div>
+      </div>
+      <div id="card3" class="card" data-role="Mid">
+        <div class="role-info h-regular col-wh">
+          <img src="./assets/img/roles/role-mid.png" alt="midlane" width="24" height="24">
+          <p>Mid</p>
+        </div>
+      </div>
+      <div id="card4" class="card" data-role="ADC">
+        <div class="role-info h-regular col-wh">
+          <img src="./assets/img/roles/role-adc.png" alt="ad carry" width="24" height="24">
+          <p>ADC</p>
+        </div>
+      </div>
+      <div id="card5" class="card" data-role="Support">
+        <div class="role-info h-regular col-wh">
+          <img src="./assets/img/roles/role-support.png" alt="support" width="24" height="24">
+          <p>Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="championModal" class="modal hidden">
+    <div class="modal-content col-wh">
+      <div class="modal-info">
+        <h1 id="modalTitle" class="h-regular2 col-green">Escolha um campeão</h1>
+        <input type="text" id="searchInput" class="h-regular">
+        <div class="roles-lol">
+          <img src="./assets/icons/icon-all.webp" width="24" height="24" alt="icone todos" class="all-roles">
+          <img src="./assets/img/roles/role-top.png" width="24" height="24" alt="top laner icon">
+          <img src="./assets/img/roles/role-jungle.png" width="24" height="24" alt="jungle icon">
+          <img src="./assets/img/roles/role-mid.png" width="24" height="24" alt="mid laner icon">
+          <img src="./assets/img/roles/role-adc.png" width="24" height="24" alt="adc icon">
+          <img src="./assets/img/roles/role-support.png" width="24" height="24" alt="support icon">
+        </div>
+      </div>
+      <ul id="championList" class="h-regular"></ul>
+    </div>
+  </div>
+
+  <section class="button-bg">
+    <div class="button-container">
+      <button class="btn col-bk h-semibold">GERAR IMAGEM</button>
+    </div>
+  </section>
+
+  <section class="tutorial-bg">
+    <div class="tutorial-container">
+      <ul class="tutorial h-semibold col-wh">
+        <li class="h-semibold2 col-wh title">COMO FAZER MEU DRAFT?</li>
+        <li class="passo">1 - Selecione um campeão por rota</li>
+        <li class="passo">TOP - JUNGLE - MID - ADC - SUPPORT</li>
+        <li class="passo">2 - Clique no botão "gerar imagem"</li>
+        <li class="passo">A imagem baixará automaticamente</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer-bg" role="contentinfo" id="footer-container">
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/gerador.js"></script>
+</body>
+
+</html>

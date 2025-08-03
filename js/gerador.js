@@ -1,3 +1,14 @@
+// Seleciona o modal e o conteúdo interno
+const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
+
+// Fecha o modal ao clicar fora do modal-content
+modal.addEventListener("click", function (e) {
+  if (!modalContent.contains(e.target)) {
+    modal.classList.add("hidden");
+  }
+});
+
 let allChamps = {};
 let currentCard = null;
 

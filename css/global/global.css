@@ -11,3 +11,37 @@ body {
   text-align: center;
   background-color: var(--col-bk);
 }
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--col-bk);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.zoom {
+  width: 60px;
+  height: 60px;
+  animation: zoom 1s linear infinite;
+}
+.zoom img {
+  filter: saturate(0);
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#site-content {
+  display: none;
+}

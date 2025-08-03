@@ -2,7 +2,11 @@
   width: 100vw;
   height: auto;
   overflow: hidden;
-  background: var(--col-green);
+  background: linear-gradient(
+    to right,
+    var(--col-dourado),
+    var(--col-douradodark)
+  );
   padding: 10px 0;
 }
 .marquee:hover .marquee-content {

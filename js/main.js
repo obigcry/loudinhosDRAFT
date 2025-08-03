@@ -1,18 +1,69 @@
+function isIndexPage() {
+  const path = window.location.pathname;
+  return path.endsWith("/") || path.endsWith("/index.html");
+}
+
+window.addEventListener("load", function () {
+  const loadingEl = document.getElementById("loading");
+  const siteContentEl = document.getElementById("site-content");
+
+  if (!loadingEl || !siteContentEl) return;
+
+  if (!isIndexPage()) {
+    setTimeout(function () {
+      loadingEl.style.display = "none";
+      siteContentEl.style.display = "block";
+    }, 750);
+  } else {
+    loadingEl.style.display = "none";
+    siteContentEl.style.display = "block";
+  }
+});
+
+document.querySelectorAll("a").forEach(function (link) {
+  const href = link.getAttribute("href");
+
+  // Ignorar links inválidos ou vazios
+  const isFakeLink = !href || href === "#" || href === "";
+
+  // Ignorar links que abrem em nova aba ou são scripts
+  const isExternal = link.target === "_blank" || href.startsWith("javascript:");
+
+  if (!isFakeLink && !isExternal) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.getElementById("site-content").style.display = "none";
+      document.getElementById("loading").style.display = "flex";
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 1000);
+    });
+  }
+});
+
+// CARREGAR HEADER E FOOTER
+async function loadHTML(selector, url) {
+  const el = document.querySelector(selector);
+  if (!el) return;
+
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Erro ao carregar ${url}`);
+    const html = await res.text();
+    el.innerHTML = html;
+  } catch (err) {
+    console.error(err);
+  }
+}
+// Carrega header e footer
+loadHTML("#header-container", "./header.html");
+loadHTML("#footer-container", "./footer.html");
+
 //  Todos os links abrem em outra aba
 const links = document.querySelectorAll(".links");
 links.forEach(function (link) {
   link.setAttribute("target", "_blank");
-});
-
-// Seleciona o modal e o conteúdo interno
-const modal = document.querySelector(".modal");
-const modalContent = document.querySelector(".modal-content");
-
-// Fecha o modal ao clicar fora do modal-content
-modal.addEventListener("click", function (e) {
-  if (!modalContent.contains(e.target)) {
-    modal.classList.add("hidden");
-  }
 });
 
 // ANIMACAO ABAIXO DO HEADER

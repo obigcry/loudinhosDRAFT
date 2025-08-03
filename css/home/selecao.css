@@ -1,7 +1,7 @@
 .selecao-bg {
   width: 100vw;
   height: auto;
-  padding: 20px 10px;
+  padding: var(--padding-pc);
   overflow: hidden;
 }
 .selecao-container {
@@ -15,6 +15,7 @@
   width: 220px;
   height: 320px;
   background-color: var(--col-bk2);
+  border: 1px solid var(--col-bk3);
   cursor: pointer;
   background-size: cover;
   background-position: top right;
@@ -29,6 +30,7 @@
   position: relative;
   background-position: top right;
 }
+
 .card .role-info {
   width: 100%;
   z-index: 2;
@@ -56,12 +58,20 @@
 .hidden {
   display: none;
 }
+.modal-info {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--col-bk3);
+  background-color: var(--col-bk2);
+  z-index: 1;
+  padding: 10px 0;
+}
+
 .modal-content {
   background-color: var(--col-bk2);
-  padding: 20px;
   border: 1px solid var(--col-bk3);
   max-width: 400px;
-  height: 400px;
+  height: 480px;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -86,7 +96,7 @@
   background: var(--col-bk);
 }
 .modal-content::-webkit-scrollbar-thumb {
-  background-color: var(--col-green);
+  background-color: var(--col-dourado);
 }
 
 #searchInput {
@@ -99,6 +109,7 @@
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
+  padding: 4px 10px;
 }
 
 #championList li {

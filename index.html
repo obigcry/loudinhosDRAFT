@@ -5,134 +5,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Gerador de Draft da Loudinhos">
-  <title>Loudinhos DRAFT</title>
+  <title>LOUDinhos DRAFT</title>
   <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-
-  <header class="header-bg" role="banner">
-    <div class="header-container">
-      <div class="header-conteudo">
-        <a href="index.html" aria-label="Página inicial LOUDinhos DRAFT">
-          <img src="./assets/img/logo_draft.webp" width="64" height="64" alt="Logo LOUDinhos DRAFT">
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <div class="marquee">
-    <div class="marquee-content" id="marquee-content">
-      <a href="https://loudinhos.com.br/" class="loudinhos links h-regular col-bk">Loudinhos.com.br</a>
+<body class="hidden-body">
+  <div id="loading">
+    <div class="zoom">
+      <img src="./assets/img/logo_draft.webp" alt="logo loudinhos">
     </div>
   </div>
 
-  <section class="selecao-bg">
-    <div class="selecao-container">
-      <div id="card1" class="card" data-role="Top">
-        <div class="role-info h-regular col-wh">
-          <img src="./assets/img/roles/role-top.png" alt="toplane" width="24" height="24">
-          <p>Top</p>
-        </div>
-      </div>
-      <div id="card2" class="card" data-role="Jungle">
-        <div class="role-info h-regular col-wh">
-          <img src="./assets/img/roles/role-jungle.png" alt="jungle" width="24" height="24">
-          <p>Jungle</p>
-        </div>
-      </div>
-      <div id="card3" class="card" data-role="Mid">
-        <div class="role-info h-regular col-wh">
-          <img src="./assets/img/roles/role-mid.png" alt="midlane" width="24" height="24">
-          <p>Mid</p>
-        </div>
-      </div>
-      <div id="card4" class="card" data-role="ADC">
-        <div class="role-info h-regular col-wh">
-          <img src="./assets/img/roles/role-adc.png" alt="ad carry" width="24" height="24">
-          <p>ADC</p>
-        </div>
-      </div>
-      <div id="card5" class="card" data-role="Support">
-        <div class="role-info h-regular col-wh">
-          <img src="./assets/img/roles/role-support.png" alt="support" width="24" height="24">
-          <p>Support</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <main id="site-content">
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script type="module" src="./js/main.js" defer></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
-  <div id="championModal" class="modal hidden">
-    <div class="modal-content col-wh">
-      <h1 id="modalTitle" class="h-regular2 col-green">Escolha um campeão</h1>
-      <input type="text" id="searchInput" class="h-regular">
-      <div class="roles-lol">
-        <img src="./assets/icons/icon-all.webp" width="24" height="24" alt="icone todos" class="all-roles">
-        <img src="./assets/img/roles/role-top.png" width="24" height="24" alt="top laner icon">
-        <img src="./assets/img/roles/role-jungle.png" width="24" height="24" alt="jungle icon">
-        <img src="./assets/img/roles/role-mid.png" width="24" height="24" alt="mid laner icon">
-        <img src="./assets/img/roles/role-adc.png" width="24" height="24" alt="adc icon">
-        <img src="./assets/img/roles/role-support.png" width="24" height="24" alt="support icon">
+    <header class="header-bg" role="banner" id="header-container">
+    </header>
+
+    <article class="marquee">
+      <div class="marquee-content" id="marquee-content">
+        <a href="https://loudinhos.com.br/" class="loudinhos links h-regular col-bk">Loudinhos.com.br</a>
       </div>
-      <ul id="championList" class="h-regular"></ul>
-    </div>
-  </div>
+    </article>
 
-  <section class="button-bg">
-    <div class="button-container">
-      <button class="btn col-bk h-semibold">GERAR IMAGEM</button>
-    </div>
-  </section>
-
-  <section class="tutorial-bg">
-    <div class="tutorial-container">
-      <ul class="tutorial h-semibold col-wh">
-        <li class="h-semibold2 col-wh title">COMO FAZER MEU DRAFT?</li>
-        <li class="passo">1 - Selecione um campeão por rota</li>
-        <li class="passo">TOP - JUNGLE - MID - ADC - SUPPORT</li>
-        <li class="passo">2 - Clique no botão "gerar imagem"</li>
-        <li class="passo">A imagem baixará automaticamente</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer class="footer-bg" role="contentinfo">
-    <div class="footer-container">
-      <div class="footer-conteudo">
-        <ul class="redes-sociais" aria-label="Redes sociais">
-          <li>
-            <a href="https://www.tiktok.com/@loudinhosofc" class="links" aria-label="TikTok da LOUDinhos" rel="noopener noreferrer">
-              <img src="./assets/icons/tiktok.svg" alt="Ícone do TikTok" width="28" height="28">
+    <section class="games-bg">
+      <div class="games-container">
+        <div class="games-conteudo col-wh h-regular2">
+          <div class="game">
+            <a href="lol.html">
+              <img src="./assets/img/games/lol-banner.png" alt="lol banner">
             </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/loudinhos/" class="links" aria-label="Instagram da LOUDinhos" rel="noopener noreferrer">
-              <img src="./assets/icons/instagram.svg" alt="Ícone do Instagram" width="28" height="28">
+            <p class="col-wh h-regular">LOL</p>
+          </div>
+          <div class="game">
+            <a href="#">
+              <img src="./assets/img/games/valorant-banner.png" alt="valorant banner">
             </a>
-          </li>
-          <li>
-            <a href="https://x.com/loudinhos/" class="links" aria-label="Twitter (X) da LOUDinhos" rel="noopener noreferrer">
-              <img src="./assets/icons/x.svg" alt="Ícone do X (Twitter)" width="28" height="28">
+            <p class="col-wh h-regular">EM BREVE</p>
+          </div>
+          <div class="game">
+            <a href="#">
+              <img src="./assets/img/games/brawl-banner.png" alt="brawl stars banner">
             </a>
-          </li>
-        </ul>
-        <div class="footer-text">
-          <a href="index.html" class="h-regular col-wh" aria-label="Voltar para a página inicial">
-            &copy; LOUDinhos
-          </a>
+            <p class="col-wh h-regular">EM BREVE</p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="./js/gerador.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <section class="creditos-bg">
+      <div class="creditos-container">
+        <div class="creditos-conteudo">
+          <h1 class="col-dourado h-regular2">LOUDinhos - O Melhor Fandom da América</h1>
+          <p class="col-wh h-regular">Este é um projeto feito para automatizar processos de divulgações e simulações de DRAFT's. Atualmente o projeto é feito com essa finalidade e de uso colaborativo e exclusivo pela equipe da LOUDinhos. Ainda estamos atualizando o projeto para que futuramente tenhamos uma área web mais completa e de fácil entendimento.<br>
+            <i> - BIGCRY</i>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-bg" role="contentinfo" id="footer-container">
+    </footer>
+
+  </main>
 </body>
 
 </html>

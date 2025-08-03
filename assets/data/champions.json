@@ -1,6 +1,12 @@
 {
   "top": [
     {
+      "name": "Ambessa",
+      "id": "Ambessa",
+      "image": "./assets/img/draft-campeos/Ambessa_0.jpg",
+      "tags": ["Tank", "Mage"]
+    },
+    {
       "name": "Aatrox",
       "id": "Aatrox",
       "image": "./assets/img/draft-campeos/Aatrox_0.jpg",
@@ -279,6 +285,12 @@
   ],
 
   "jungle": [
+    {
+      "name": "Ambessa",
+      "id": "Ambessa",
+      "image": "./assets/img/draft-campeos/Ambessa_0.jpg",
+      "tags": ["Tank", "Mage"]
+    },
     {
       "name": "Amumu",
       "id": "Amumu",

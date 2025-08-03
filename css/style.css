@@ -3,8 +3,10 @@
 @import url("./global/marquee.css");
 @import url("./global/header.css");
 @import url("./global/footer.css");
+@import url("./home/games.css");
 @import url("./home/selecao.css");
 @import url("./home/button.css");
 @import url("./home/tutorial.css");
+@import url("./home/creditos.css");
 @import url("./utilitarios/colors.css");
 @import url("./utilitarios/tipografia.css");

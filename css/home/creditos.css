@@ -1,0 +1,25 @@
+.creditos-bg {
+  width: 100vw;
+  height: auto;
+  padding: var(--padding-pc);
+  overflow: hidden;
+}
+.creditos-container {
+  display: flex;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.creditos-conteudo h1 {
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .creditos-conteudo h1 {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .creditos-conteudo p {
+    text-align: justify;
+  }
+}
