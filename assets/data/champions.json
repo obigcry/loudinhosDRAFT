@@ -1030,6 +1030,12 @@
       "tags": ["Enchanter", "Support"]
     },
     {
+      "name": "Nautilus",
+      "id": "Nautilus",
+      "image": "./assets/img/draft-campeos/Nautilus_0.jpg",
+      "tags": ["Enchanter", "Support"]
+    },
+    {
       "name": "Pyke",
       "id": "Pyke",
       "image": "./assets/img/draft-campeos/Pyke_0.jpg",
