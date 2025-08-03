@@ -305,8 +305,8 @@
     },
     {
       "name": "Brand",
-      "id": "BelVeth",
-      "image": "./assets/img/draft-campeos/BelVeth_0.jpg",
+      "id": "Brand",
+      "image": "./assets/img/draft-campeos/Brand_0.jpg",
       "tags": ["Tank", "Mage"]
     },
     {
