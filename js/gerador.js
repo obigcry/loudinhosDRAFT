@@ -125,7 +125,7 @@ function renderChampionList(champs, listElement, card, modal) {
         const role = card.dataset.role.toLowerCase();
 
         const img = document.createElement("img");
-        img.src = `./assets/img/roles/role-${role}.png`;
+        img.src = `./assets/img/roles/role-${role}.webp`;
         img.alt = role;
         img.width = 24;
         img.height = 24;
