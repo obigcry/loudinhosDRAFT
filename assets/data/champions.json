@@ -954,6 +954,12 @@
       "id": "Mel",
       "image": "./assets/img/draft-campeos/Mel_0.jpg",
       "tags": ["Marksman"]
+    },
+    {
+      "name": "Yunara",
+      "id": "Yunara",
+      "image": "./assets/img/draft-campeos/Yunara_0.jpg",
+      "tags": ["Marksman"]
     }
   ],
   "support": [
