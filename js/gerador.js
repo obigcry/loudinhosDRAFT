@@ -225,7 +225,7 @@ document
 
       await new Promise((resolveIcon) => {
         const roleImg = new Image();
-        roleImg.src = `./assets/img/roles/role-${roleName}.png`;
+        roleImg.src = `./assets/img/roles/role-${roleName}.webp`;
         roleImg.onload = () => {
           const iconSize = 48;
           const padding = 10;
