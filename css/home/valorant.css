@@ -1,0 +1,29 @@
+.modal-content .roles-valorant {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  gap: 20px;
+  justify-content: center;
+}
+.roles-valorant img:hover {
+  transform: scale(1.15);
+}
+
+#agentList {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding: 4px 10px;
+}
+
+#agentList li {
+  border: 1px solid var(--col-bk3);
+  padding: 5px;
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+#agentList li:hover {
+  background-color: var(--col-bk);
+}

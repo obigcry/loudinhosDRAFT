@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gerador de Draft da Loudinhos">
+  <title>DRAFT - Valorant</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header class="header-bg" role="banner" id="header-container">
+  </header>
+
+  <div class="marquee">
+    <div class="marquee-content" id="marquee-content">
+      <a href="https://loudinhos.com.br/" class="loudinhos links h-regular col-bk">Loudinhos.com.br</a>
+    </div>
+  </div>
+
+  <section class="selecao-bg">
+    <div class="selecao-container">
+      <div id="card1" class="card" data-role="Controlador">
+        <div class="role-info h-regular col-wh">
+          <img src="./assets/img/roles/role-controlador.webp" alt="controlador" width="24" height="24">
+          <p>Controlador</p>
+        </div>
+      </div>
+      <div id="card2" class="card" data-role="Iniciador">
+        <div class="role-info h-regular col-wh">
+          <img src="./assets/img/roles/role-iniciador.webp" alt="iniciador" width="24" height="24">
+          <p>Iniciador</p>
+        </div>
+      </div>
+      <div id="card3" class="card" data-role="Flex">
+        <div class="role-info h-regular col-wh">
+          <img src="./assets/icons/icon-all.webp" alt="flex" width="28" height="28" class="flex all-roles">
+          <p>Flex</p>
+        </div>
+      </div>
+      <div id="card4" class="card" data-role="Sentinela">
+        <div class="role-info h-regular col-wh">
+          <img src="./assets/img/roles/role-sentinela.webp" alt="sentinela" width="24" height="24">
+          <p>Sentinela</p>
+        </div>
+      </div>
+      <div id="card5" class="card" data-role="Duelista">
+        <div class="role-info h-regular col-wh">
+          <img src="./assets/img/roles/role-duelista.webp" alt="duelista" width="24" height="24">
+          <p>Duelista</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="agentModal" class="modal hidden">
+    <div class="modal-content col-wh">
+      <div class="modal-info">
+        <h1 id="modalTitle" class="h-regular2 col-green">Escolha um agente</h1>
+        <input type="text" id="searchInput" class="h-regular">
+        <div class="roles-valorant">
+          <img src="./assets/img/roles/role-controlador.webp" width="24" height="24" alt="controlador icon">
+          <img src="./assets/img/roles/role-iniciador.webp" width="24" height="24" alt="iniciador icon">
+          <img src="./assets/img/roles/role-flex.webp" width="28" height="28" alt="icone flex">
+          <img src="./assets/img/roles/role-sentinela.webp" width="24" height="24" alt="sentinela icon">
+          <img src="./assets/img/roles/role-duelista.webp" width="24" height="24" alt="duelista icon">
+        </div>
+      </div>
+      <ul id="agentList" class="h-regular"></ul>
+    </div>
+  </div>
+
+  <section class="button-bg">
+    <div class="button-container">
+      <button class="btn col-bk h-semibold">GERAR IMAGEM</button>
+    </div>
+  </section>
+
+  <section class="tutorial-bg">
+    <div class="tutorial-container">
+      <ul class="tutorial h-semibold col-wh">
+        <li class="h-semibold2 col-wh title">COMO FAZER MEU DRAFT?</li>
+        <li class="passo">1 - Selecione um agente</li>
+        <li class="passo">CONTROLADOR - INICIADOR - FLEX - SENTINELA - DUELISTA</li>
+        <li class="passo">2 - Clique no botão "gerar imagem"</li>
+        <li class="passo">A imagem baixará automaticamente</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer-bg" role="contentinfo" id="footer-container">
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/geradorValorant.js"></script>
+</body>
+
+</html>

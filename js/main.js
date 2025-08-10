@@ -79,5 +79,38 @@ function cloneMarquee() {
   }
 }
 
-window.addEventListener("load", cloneMarquee);
+function applyPageSpecificStyles() {
+  const path = window.location.pathname;
+  const page = path.substring(path.lastIndexOf("/") + 1);
+
+  const buttonContainer = document.querySelector(".button-container");
+  let gradient = "";
+
+  if (page === "valorant.html") {
+    gradient = "linear-gradient(to right, var(--col-red), var(--col-reddark))";
+  } else if (page === "brawl.html") {
+    gradient = "linear-gradient(to right, #00BFFF, #0000CD)";
+  } else if (page === "lol.html") {
+    gradient =
+      "linear-gradient(to right, var(--col-dourado), var(--col-douradodark))";
+  }
+
+  if (gradient) {
+    marquee.parentElement.style.background = gradient;
+    if (buttonContainer) {
+      buttonContainer.style.background = gradient;
+    }
+  } else {
+    marquee.parentElement.style.background = "";
+    if (buttonContainer) {
+      buttonContainer.style.background = "";
+    }
+  }
+}
+
+window.addEventListener("load", () => {
+  cloneMarquee();
+  applyPageSpecificStyles();
+});
+
 window.addEventListener("resize", cloneMarquee);

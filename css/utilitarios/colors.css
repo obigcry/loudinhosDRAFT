@@ -5,6 +5,8 @@
   --col-wh: #fdfdfd;
   --col-dourado: #d39019;
   --col-douradodark: #f39b03;
+  --col-red: #d41535;
+  --col-reddark: #c20322;
 }
 
 .col-bk {
@@ -24,4 +26,10 @@
 }
 .col-douradodark {
   color: var(--col-douradodark);
+}
+.col-red {
+  color: var(--col-red);
+}
+.col-reddark {
+  color: var(--col-reddark);
 }

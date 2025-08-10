@@ -1,0 +1,179 @@
+{
+  "controlador": [
+    {
+      "name": "Harbor",
+      "id": "Harbor",
+      "image": "./assets/img/draft-agentes/harbor.png",
+      "role": ["flex", "controlador"]
+    },
+    {
+      "name": "Omen",
+      "id": "Omen",
+      "image": "./assets/img/draft-agentes/omen.png",
+      "role": ["flex", "controlador"]
+    },
+    {
+      "name": "Clove",
+      "id": "Clove",
+      "image": "./assets/img/draft-agentes/clove.png",
+      "role": ["flex", "controlador"]
+    },
+    {
+      "name": "Viper",
+      "id": "Viper",
+      "image": "./assets/img/draft-agentes/viper.png",
+      "role": ["flex", "controlador"]
+    },
+    {
+      "name": "Brimstone",
+      "id": "Brimstone",
+      "image": "./assets/img/draft-agentes/brimstone.png",
+      "role": ["flex", "controlador"]
+    },
+    {
+      "name": "Astra",
+      "id": "Astra",
+      "image": "./assets/img/draft-agentes/astra.png",
+      "role": ["flex", "controlador"]
+    }
+  ],
+
+  "iniciador": [
+    {
+      "name": "Breach",
+      "id": "Breach",
+      "image": "./assets/img/draft-agentes/breach.png",
+      "tags": ["flex", "iniciador"]
+    },
+    {
+      "name": "Skye",
+      "id": "Skye",
+      "image": "./assets/img/draft-agentes/skye.png",
+      "tags": ["flex", "iniciador"]
+    },
+    {
+      "name": "KAY/O",
+      "id": "Kayo",
+      "image": "./assets/img/draft-agentes/kayo.png",
+      "tags": ["flex", "iniciador"]
+    },
+    {
+      "name": "Fade",
+      "id": "Fade",
+      "image": "./assets/img/draft-agentes/fade.png",
+      "tags": ["flex", "iniciador"]
+    },
+    {
+      "name": "Gekko",
+      "id": "Gekko",
+      "image": "./assets/img/draft-agentes/gekko.png",
+      "tags": ["flex", "iniciador"]
+    },
+    {
+      "name": "Tejo",
+      "id": "Tejo",
+      "image": "./assets/img/draft-agentes/tejo.png",
+      "tags": ["flex", "iniciador"]
+    },
+    {
+      "name": "Sova",
+      "id": "Sova",
+      "image": "./assets/img/draft-agentes/sova.png",
+      "tags": ["flex", "iniciador"]
+    }
+  ],
+  "sentinela": [
+    {
+      "name": "Sage",
+      "id": "Sage",
+      "image": "./assets/img/draft-agentes/sage.png",
+      "tags": ["Flex", "sentinela"]
+    },
+    {
+      "name": "Tejo",
+      "id": "Tejo",
+      "image": "./assets/img/draft-agentes/tejo.png",
+      "tags": ["Flex", "sentinela"]
+    },
+    {
+      "name": "Killjoy",
+      "id": "Killjoy",
+      "image": "./assets/img/draft-agentes/killjoy.png",
+      "tags": ["Flex", "sentinela"]
+    },
+    {
+      "name": "Deadlock",
+      "id": "Deadlock",
+      "image": "./assets/img/draft-agentes/deadlock.png",
+      "tags": ["Flex", "sentinela"]
+    },
+    {
+      "name": "Vyse",
+      "id": "Vyse",
+      "image": "./assets/img/draft-agentes/vyse.png",
+      "tags": ["Flex", "sentinela"]
+    },
+    {
+      "name": "Chamber",
+      "id": "Chamber",
+      "image": "./assets/img/draft-agentes/chamber.png",
+      "tags": ["Flex", "sentinela"]
+    },
+    {
+      "name": "Cypher",
+      "id": "Cypher",
+      "image": "./assets/img/draft-agentes/cypher.png",
+      "tags": ["Flex", "sentinela"]
+    }
+  ],
+  "duelista": [
+    {
+      "name": "Jett",
+      "id": "Jett",
+      "image": "./assets/img/draft-agentes/jett.png",
+      "role": ["flex", "duelista"]
+    },
+    {
+      "name": "Phoenix",
+      "id": "Phoenix",
+      "image": "./assets/img/draft-agentes/phoenix.png",
+      "role": ["flex", "duelista"]
+    },
+    {
+      "name": "Raze",
+      "id": "Raze",
+      "image": "./assets/img/draft-agentes/raze.png",
+      "role": ["flex", "duelista"]
+    },
+    {
+      "name": "Reyna",
+      "id": "Reyna",
+      "image": "./assets/img/draft-agentes/reyna.png",
+      "role": ["flex", "duelista"]
+    },
+    {
+      "name": "Neon",
+      "id": "Neon",
+      "image": "./assets/img/draft-agentes/neon.png",
+      "role": ["flex", "duelista"]
+    },
+    {
+      "name": "Iso",
+      "id": "Iso",
+      "image": "./assets/img/draft-agentes/iso.png",
+      "role": ["flex", "duelista"]
+    },
+    {
+      "name": "Waylay",
+      "id": "Waylay",
+      "image": "./assets/img/draft-agentes/waylay.png",
+      "role": ["flex", "duelista"]
+    },
+    {
+      "name": "Yoru",
+      "id": "Yoru",
+      "image": "./assets/img/draft-agentes/yoru.png",
+      "role": ["flex", "duelista"]
+    }
+  ]
+}

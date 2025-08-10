@@ -42,8 +42,7 @@
   transform: translate(-50%);
   background-color: rgba(0, 0, 0, 0.5);
 }
-.game:nth-child(2),
-.game:nth-child(3) {
+.game:last-child {
   filter: grayscale();
 }
 

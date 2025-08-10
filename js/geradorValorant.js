@@ -9,113 +9,121 @@ modal.addEventListener("click", function (e) {
   }
 });
 
-let allChamps = {};
+let allAgents = {};
 let currentCard = null;
 
-async function loadChampions() {
-  const res = await fetch("./assets/data/champions.json");
+async function loadAgents() {
+  const res = await fetch("./assets/data/agents.json");
   const data = await res.json();
-  allChamps = data;
+  allAgents = data;
 }
 
-loadChampions();
+loadAgents();
 
-function getAllChampions() {
-  const champs = Object.values(allChamps).flat();
+function getAllAgents() {
+  // Flatten o objeto allAgents para uma lista única
+  const agents = Object.values(allAgents).flat();
   const unique = [];
   const seen = new Set();
 
-  for (const champ of champs) {
-    if (!seen.has(champ.name)) {
-      seen.add(champ.name);
-      unique.push(champ);
+  for (const agent of agents) {
+    if (!seen.has(agent.name)) {
+      seen.add(agent.name);
+      unique.push(agent);
     }
   }
-
   return unique;
 }
 
 function filterByRole(role) {
-  return allChamps[role.toLowerCase()] || [];
+  // Retorna agentes pela role (lowercase)
+  return allAgents[role.toLowerCase()] || [];
 }
 
 document.querySelectorAll(".card").forEach((card) => {
   card.addEventListener("click", () => {
-    const modal = document.getElementById("championModal");
+    const modal = document.getElementById("agentModal");
     const searchInput = document.getElementById("searchInput");
-    const championList = document.getElementById("championList");
+    const agentList = document.getElementById("agentList");
 
-    let champs = getAllChampions();
-    let currentChamps = champs;
+    let agents = getAllAgents();
+    let currentAgents = agents;
 
     currentCard = card;
 
-    renderChampionList(champs, championList, card, modal);
+    renderAgentList(agents, agentList, card, modal);
 
     modal.classList.remove("hidden");
     searchInput.value = "";
     searchInput.focus();
 
+    // Atualiza lista ao digitar no input
     searchInput.oninput = () => {
-      const filtered = currentChamps.filter((champ) =>
-        champ.name.toLowerCase().includes(searchInput.value.toLowerCase())
+      const filtered = currentAgents.filter((agent) =>
+        agent.name.toLowerCase().includes(searchInput.value.toLowerCase())
       );
-      renderChampionList(filtered, championList, card, modal);
+      renderAgentList(filtered, agentList, card, modal);
     };
 
-    document.querySelectorAll(".roles-lol img").forEach((icon) => {
+    // Configura filtro por roles nos ícones
+    document.querySelectorAll(".roles-valorant img").forEach((icon) => {
       icon.onclick = () => {
         const alt = icon.alt.toLowerCase();
 
-        if (icon.classList.contains("all-roles") || alt.includes("todos")) {
-          currentChamps = getAllChampions();
-          renderChampionList(currentChamps, championList, currentCard, modal);
+        if (
+          icon.classList.contains("all-roles") ||
+          alt.includes("todos") ||
+          alt.includes("flex")
+        ) {
+          currentAgents = getAllAgents();
+          renderAgentList(currentAgents, agentList, currentCard, modal);
           return;
         }
 
-        const role = alt.includes("top")
-          ? "top"
-          : alt.includes("jungle")
-          ? "jungle"
-          : alt.includes("mid")
-          ? "mid"
-          : alt.includes("adc")
-          ? "adc"
-          : alt.includes("support")
-          ? "support"
+        const role = alt.includes("controlador")
+          ? "controlador"
+          : alt.includes("iniciador")
+          ? "iniciador"
+          : alt.includes("flex")
+          ? "flex"
+          : alt.includes("sentinela")
+          ? "sentinela"
+          : alt.includes("duelista")
+          ? "duelista"
           : "";
 
         if (!role) return;
 
-        currentChamps = filterByRole(role);
-        renderChampionList(currentChamps, championList, currentCard, modal);
+        currentAgents = filterByRole(role);
+        renderAgentList(currentAgents, agentList, currentCard, modal);
       };
     });
   });
 });
 
-function renderChampionList(champs, listElement, card, modal) {
+function renderAgentList(agents, listElement, card, modal) {
   listElement.innerHTML = "";
 
   const playerNames = {
-    card1: "Robo",
-    card2: "Gryffinn",
-    card3: "Jool",
-    card4: "Route",
-    card5: "Redbert",
+    card1: "pANcada",
+    card2: "Cauanzin",
+    card3: "RobbieBk",
+    card4: "LukXo",
+    card5: "Virtyy",
   };
 
-  champs
+  agents
     .sort((a, b) => a.name.localeCompare(b.name))
-    .forEach((champ) => {
+    .forEach((agent) => {
       const li = document.createElement("li");
-      li.innerText = champ.name;
+      li.innerText = agent.name;
 
       li.onclick = () => {
-        card.style.backgroundImage = `url(${champ.image})`;
+        card.style.backgroundImage = `url(${agent.image})`;
         card.classList.add("champion-selected");
         card.innerText = "";
 
+        // Remove antigo role-info se existir
         const oldInfo = card.querySelector(".role-info");
         if (oldInfo) oldInfo.remove();
 
@@ -132,7 +140,7 @@ function renderChampionList(champs, listElement, card, modal) {
 
         const name = document.createElement("p");
         const cardId = card.id;
-        name.innerText = playerNames[cardId] || champ.name;
+        name.innerText = playerNames[cardId] || agent.name;
 
         roleInfo.appendChild(img);
         roleInfo.appendChild(name);
@@ -145,13 +153,22 @@ function renderChampionList(champs, listElement, card, modal) {
     });
 }
 
+// Definindo os backgrounds das cards (cor clara primeiro, depois escura)
+const cardBackgrounds = {
+  card1: ["#1c60c0ff", "#19212c"], // Controlador (claro, escuro)
+  card2: ["#5cc468ff", "#19212c"], // Iniciador
+  card3: ["#2e3841", "#19212c"], // Flex
+  card4: ["#df9f0aff", "#19212c"], // Sentinela
+  card5: ["#db244eff", "#19212c"], // Duelista
+};
+
 document
   .querySelector(".button-container")
   .addEventListener("click", async () => {
     const cards = document.querySelectorAll(".card.champion-selected");
 
     if (cards.length < 5) {
-      alert("Selecione todos os 5 campeões antes de gerar a imagem.");
+      alert("Selecione todos os 5 agentes antes de gerar a imagem.");
       return;
     }
 
@@ -161,11 +178,11 @@ document
     const ctx = canvas.getContext("2d");
 
     const playerNames = {
-      card1: "Robo",
-      card2: "Gryffinn",
-      card3: "Jool",
-      card4: "Route",
-      card5: "Redbert",
+      card1: "pANcada",
+      card2: "Cauanzin",
+      card3: "RobbieBk",
+      card4: "LukXo",
+      card5: "Virtyy",
     };
 
     for (let i = 0; i < 5; i++) {
@@ -186,6 +203,24 @@ document
           const slotWidth = 384;
           const slotHeight = 1080;
 
+          // Desenha o fundo do card com gradiente (60% claro embaixo, 40% escuro em cima)
+          const [lightColor, darkColor] = cardBackgrounds[card.id];
+
+          const gradient = ctx.createLinearGradient(
+            i * slotWidth,
+            0,
+            i * slotWidth,
+            slotHeight
+          );
+          gradient.addColorStop(0, darkColor);
+          gradient.addColorStop(0.3, darkColor);
+          gradient.addColorStop(0.9, lightColor);
+          gradient.addColorStop(1, lightColor);
+
+          ctx.fillStyle = gradient;
+          ctx.fillRect(i * slotWidth, 0, slotWidth, slotHeight);
+
+          // Ajusta crop centralizado na proporção 384x1080
           const imgRatio = img.width / img.height;
           const slotRatio = slotWidth / slotHeight;
 
@@ -195,10 +230,12 @@ document
             srcHeight = img.height;
 
           if (imgRatio > slotRatio) {
+            // imagem mais larga, corta horizontalmente
             const newWidth = img.height * slotRatio;
             srcX = (img.width - newWidth) / 2;
             srcWidth = newWidth;
           } else {
+            // imagem mais alta, corta verticalmente
             const newHeight = img.width / slotRatio;
             srcY = (img.height - newHeight) / 2;
             srcHeight = newHeight;
@@ -218,8 +255,13 @@ document
 
           resolve();
         };
+        img.onerror = () => {
+          console.error("Erro ao carregar imagem: ", imageUrl);
+          resolve();
+        };
       });
 
+      // Desenha fundo e ícone com nome do player na parte inferior
       const roleName = card.dataset.role.toLowerCase();
       const playerName = playerNames[card.id] || "";
 
@@ -234,6 +276,7 @@ document
           const centerX = i * 384 + 384 / 2;
           const bgY = 1080 - bgHeight;
 
+          // Fundo sem espaço embaixo (transparência 0.7)
           ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
           ctx.fillRect(i * 384, bgY, 384, bgHeight);
 
@@ -252,12 +295,17 @@ document
 
           resolveIcon();
         };
+        roleImg.onerror = () => {
+          console.error("Erro ao carregar ícone da role: ", roleName);
+          resolveIcon();
+        };
       });
     }
 
+    // Gera e baixa a imagem final
     const dataURL = canvas.toDataURL("image/png");
     const link = document.createElement("a");
     link.href = dataURL;
-    link.download = "LOL_DRAFT.png";
+    link.download = "VALORANT_DRAFT.png";
     link.click();
   });

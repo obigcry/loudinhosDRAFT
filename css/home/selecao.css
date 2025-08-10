@@ -12,7 +12,7 @@
 }
 
 .card {
-  width: 220px;
+  width: 210px;
   height: 320px;
   background-color: var(--col-bk2);
   border: 1px solid var(--col-bk3);
@@ -75,9 +75,7 @@
   overflow: hidden;
   overflow-y: scroll;
 }
-.all-roles {
-  filter: invert();
-}
+
 .modal-content .roles-lol {
   cursor: pointer;
   display: flex;
